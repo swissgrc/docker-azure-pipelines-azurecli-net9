@@ -29,16 +29,17 @@ The following example shows the container used for a deployment step with a Azur
                 - bash: |
                     az version
 ```
+### Included Software
+- Azure CLI
 
 ### Tags
 
-| Tag           | Description                                                                                               | Base Image                                | Azure CLI | Size                                                                                                                                   |
-|---------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| latest        | Latest stable release (from `main` branch)                                                                | swissgrc/azure-pipelines-dotnet:9.0.102   | 2.68.0    | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest?style=flat-square)        |
-| latest-net9   | Identical to `latest` tag                                                                                 |                                           |           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest-net9?style=flat-square)   |
-| unstable      | Latest unstable release (from `develop` branch)                                                           | swissgrc/azure-pipelines-dotnet:9.0.102   | 2.68.0    | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable?style=flat-square)      |
-| unstable-net9 | Identical to `unstable` tag                                                                               |                                           |           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable-net9?style=flat-square) |
-| 2.67.0-net9   | [Azure CLI 2.67.0](https://learn.microsoft.com/en-us/cli/azure/release-notes-azure-cli#november-19-2024)  | swissgrc/azure-pipelines-dotnet:9.0.100   | 2.67.0    | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/2.67.0-net9?style=flat-square)   |
-| 2.68.0-net9   | [Azure CLI 2.68.0](https://learn.microsoft.com/en-us/cli/azure/release-notes-azure-cli#january-14-2025)   | swissgrc/azure-pipelines-dotnet:9.0.102   | 2.68.0    | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/2.68.0-net9?style=flat-square)   |
+| Tag           | Description                                               | Size                                                                                                                                   |
+|---------------|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| latest        | Latest stable release (from `main` branch)                | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest?style=flat-square)        |
+| latest-net9   | Identical to `latest` tag                                 | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest-net9?style=flat-square)   |
+| unstable      | Latest unstable release (from `develop` branch)           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable?style=flat-square)      |
+| unstable-net9 | Identical to `unstable` tag                               | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable-net9?style=flat-square) |
+| x.y.z-net9    | Image for a specific version of Azure CLI                 |                                                                                                                                        |
 
 [Azure Pipelines container jobs]: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/container-phases
