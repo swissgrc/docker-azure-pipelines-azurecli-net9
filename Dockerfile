@@ -1,5 +1,5 @@
 # Base image containing dependencies used in builder and final image
-FROM ghcr.io/swissgrc/azure-pipelines-dotnet:9.0.304 AS base
+FROM ghcr.io/swissgrc/azure-pipelines-dotnet:9.0.305 AS base
 
 
 # Builder image
@@ -9,11 +9,11 @@ FROM base AS build
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # renovate: datasource=repology depName=debian_12/curl versioning=deb
-ENV CURL_VERSION=7.88.1-10+deb12u12
+ENV CURL_VERSION=7.88.1-10+deb12u14
 # renovate: datasource=repology depName=debian_12/lsb-release versioning=deb
 ENV LSBRELEASE_VERSION=12.0-1
 # renovate: datasource=repology depName=debian_12/gnupg2 versioning=deb
-ENV GNUPG_VERSION=2.2.40-1.1
+ENV GNUPG_VERSION=2.2.40-1.1+deb12u1
 
 RUN apt-get update -y && \
   # Install necessary dependencies
@@ -47,7 +47,7 @@ COPY --from=build /etc/apt/sources.list.d/ /etc/apt/sources.list.d
 # Install Azure CLI
 
 # renovate: datasource=github-tags depName=Azure/azure-cli extractVersion=^azure-cli-(?<version>.*)$
-ENV AZURECLI_VERSION=2.76.0
+ENV AZURECLI_VERSION=2.77.0
 
 RUN apt-get update -y && \
   # Install Azure CLI
