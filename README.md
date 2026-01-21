@@ -38,10 +38,8 @@ The following example shows the container used for a deployment step with a Azur
 
 | Tag           | Description                                               | Size                                                                                                                                   |
 |---------------|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| latest        | Latest stable release (from `main` branch)                | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest?style=flat-square)        |
-| latest-net9   | Identical to `latest` tag                                 | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest-net9?style=flat-square)   |
-| unstable      | Latest unstable release (from `develop` branch)           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable?style=flat-square)      |
-| unstable-net9 | Identical to `unstable` tag                               | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable-net9?style=flat-square) |
+| latest-net9   | Latest stable release (from `main` branch)                | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/latest-net9?style=flat-square)   |
+| unstable-net9 | Latest unstable release (from `develop` branch)           | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/swissgrc/azure-pipelines-azurecli/unstable-net9?style=flat-square) |
 | x.y.z-net9    | Image for a specific version of Azure CLI                 |                                                                                                                                        |
 
 [Azure Pipelines container jobs]: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/container-phases
